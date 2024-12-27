@@ -1,0 +1,1 @@
+The solution, shown in `UnmountedRefSolution.js`, uses `useEffect` with a cleanup function.  The cleanup function is guaranteed to run when the component unmounts.  This ensures that `clearTimeout` is only called if the component is still mounted.  The key is to use the return value of `useEffect` to handle the cleanup.
